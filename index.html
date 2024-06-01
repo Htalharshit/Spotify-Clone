@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - One Place For Your Favourite Music</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li class="logo">
+          <img src="logo.png" alt="spotify" /><span>Spotify</span>
+        </li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songlist">
+        <h1>Trending Now</h1>
+        <div class="songitem">
+            <img src="cover/1.jfif" alt="cover1" >
+            <span class="songname">hello</span>
+            <span class="duration"><i id="0" class="fa-regular songplaypause fa-circle-play"></i></span>
+        </div>
+        <div class="songitem">
+            <img src="cover/2.jfif" alt="cover1" >
+            <span class="songname">hello</span>
+            <span class="duration"><i id="1" class="fa-regular songplaypause fa-circle-play"></i></span>
+        </div>
+        <div class="songitem">
+            <img src="cover/3.jfif" alt="cover1" >
+            <span class="songname">hello</span>
+            <span class="duration"><i id="2" class="fa-regular songplaypause fa-circle-play"></i></span>
+        </div>
+        <div class="songitem">
+            <img src="cover/4.jfif" alt="cover1" >
+            <span class="songname">hello</span>
+            <span class="duration"><i id="3" class="fa-regular songplaypause fa-circle-play"></i></span>
+        </div>
+        <div class="songitem">
+            <img src="cover/5.jfif" alt="cover1" >
+            <span class="songname">hello</span>
+            <span class="duration"><i id="4" class="fa-regular songplaypause fa-circle-play"></i></span>
+        </div>
+        <div class="songitem">
+            <img src="cover/6.jfif" alt="cover1" >
+            <span class="songname">hello</span>
+            <span class="duration"><i id="5" class="fa-regular songplaypause fa-circle-play"></i></span>
+        </div>
+      </div>
+      <div class="songbanner"></div>
+    </div>
+    <div class="bottom">
+      <input type="range" name="range" value="0" id="progressbar" min="0" max="100" />
+      <div class="icons">
+        <i class="fa-solid fa-3x fa-backward-step previous"></i>
+        <i class="fa-regular fa-3x fa-circle-play" id="masterplay"></i>
+        <i class="fa-solid fa-3x fa-forward-step next"></i>
+      </div>
+      <img src="playing.gif" alt="playing" id="gif">
+      <span class="playingName"></span>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b83ce57775.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
